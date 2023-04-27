@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <form action="index.html" method="GET" autocomplete="on" class="form" id="mform">
+
+      <h3 class="heading mainContentTitle">Thay đổi thông tin sinh viên</h3>
+  
+      
+      <div class="content__main">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="fullnamei" class="form-label">Tên đầy đủ</label>
+            <input id="fullnamei" name="fullname" type="text" placeholder="VD: Hoàng Đức Thành" class="form-control">
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="admission-yeari" class="form-label">Năm vào trường</label>
+            <input id="admission-yeari" name="admission-year" type="number" placeholder="VD: 2020" class="form-control" min="2000" max="21 00">
+            <span class="form-message"></span>
+          </div>
+  
+
+          <div class="form-group">
+            <label for="study-statusi" class="form-label">Chương trình đào tạo</label>
+            <select id="study-statusi" name="study-status" class="form-control">
+              <option selected>Chọn chương trình</option>
+              <option value="Khoa Học Máy Tính">Khoa Học Máy Tính</option>
+              <option value="Kĩ Thuật Máy Tính">Kĩ Thuật Máy Tính</option>
+              <option value="Tự Động Hóa">Tự Động Hóa</option>
+              <option value="Toán-Tin">Toán-Tin</option>
+              <option value="Kỹ thuật hóa học">Kỹ thuật hóa học</option>
+              <option value="Kỹ thuật in và truyền thông">Kỹ thuật in và truyền thông</option>
+              <option value="Kỹ thuật vật liệu">Kỹ thuật vật liệu</option>
+              <option value="Vật lý kỹ thuật">Vật lý kỹ thuật</option>
+              <option value="Kỹ thuật hạt nhân">Kỹ thuật hạt nhân</option>
+              <option value="Kỹ thuật sinh học">Kỹ thuật sinh học</option>
+              <option value="Công nghệ may">Công nghệ may</option>
+              <option value="Kỹ thuật cơ khí">Kỹ thuật cơ khí</option>
+              <option value="Kỹ thuật cơ điện tử">Kỹ thuật cơ điện tử</option>
+              <option value="Kỹ thuật nhiệt">Kỹ thuật nhiệt</option>
+              <option value="Kỹ thuật điện, điện tử">Kỹ thuật điện, điện tử</option>
+              <option value="Kỹ thuật điện tử-truyền thông">Kỹ thuật điện tử-truyền thông</option>
+              <option value="Hệ thống thông tin">Hệ thống thông tin</option>
+              <option value="Công nghệ thông tin">Công nghệ thông tint</option>
+              <option value="Quản trị kinh doanh">Quản trị kinh doanh</option>
+              <option value="Tài chính-Ngân hàng">Tài chính-Ngân hàng</option>
+              <option value="Ngôn ngữ Anh">Ngôn ngữ Anh</option>
+            </select>
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="study-status-schooli" class="form-label">Trường/Khoa/Viện quản lý</label>
+            <select id="study-status-schooli" name="study-status" class="form-control">
+              <option selected>Chọn Trường/Khoa/Viện Quản lí</option>
+              <option value="Khoa Giáo dục Quốc phòng & An ninh">Khoa Giáo dục Quốc phòng & An ninh</option>
+              <option value="Khoa Giáo dục Thể chất">Khoa Giáo dục Thể chất</option>
+              <option value="Khoa Lý luận Chính trị">Khoa Lý luận Chính trị</option>
+              <option value="Trường Cơ khí">Trường Cơ khí</option>
+              <option value="Viện Công nghệ Sinh học và Công nghệ Thực phẩm">Viện Công nghệ Sinh học và Công nghệ Thực phẩm</option>
+              <option value="Trường Công nghệ Thông tin và Truyền thông">Trường Công nghệ Thông tin và Truyền thông</option>
+              <option value="Viện Dệt may - Da giầy và Thời trang">Viện Dệt may - Da giầy và Thời trang</option>
+              <option value="Viện Khoa học và Công nghệ Môi trường">Viện Khoa học và Công nghệ Môi trường</option>
+              <option value="Viện Khoa học và Kỹ thuật Vật liệu">Viện Khoa học và Kỹ thuật Vật liệu</option>
+              <option value="Viện Kinh tế và Quản lý">Viện Kinh tế và Quản lý</option>
+              <option value="Viện Kỹ thuật Hóa học">Viện Kỹ thuật Hóa học</option>
+              <option value="Viện Ngoại ngữ">Viện Ngoại ngữ</option>
+              <option value="Viện Sư phạm Kỹ thuật">Viện Sư phạm Kỹ thuật</option>
+              <option value="Viện Toán ứng dụng và Tin học">Viện Toán ứng dụng và Tin học</option>
+              <option value="Viện Vật lý Kỹ thuật">Viện Vật lý Kỹ thuật</option>
+              <option value="Trường Điện - Điện tử">Trường Điện - Điện tử</option>
+            </select>
+            <span class="form-message"></span>
+          </div>
+    
+          <div class="form-group">
+            <label for="learn-statusi" class="form-label">Tình trạng học tập</label>
+            <select id="learn-statusi" name="learn-status" class="form-control">
+              <option selected>Chọn</option>
+              <option value="Học">Học</option>
+              <option value="Buộc thôi học">Buộc thôi học</option>
+              <option value="Tốt Nghiệp">Tốt Nghiệp</option>
+            </select>
+            <span class="form-message"></span>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+
+          <div class="form-group">
+            <label for="genderi" class="form-label">Giới tính </label>
+            <select id="genderi" name="gender" class="form-control">
+              <option selected>Chọn</option>
+              <option value="man">Nam</option>
+              <option value="feman">Nữ</option>
+            </select>
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="classi" class="form-label">Lớp</label>
+            <input id="classi" name="class" type="text" placeholder="VD: Khoa học máy tính 05 K65" class="form-control">
+            <span class="form-message"></span>
+          </div>
+    
+          <div class="form-group">
+            <label for="coursei" class="form-label">Khóa học</label>
+            <input id="coursei" name="course" type="number" placeholder="VD: 65" class="form-control" min="60" max="70">
+            <span class="form-message"></span>
+          </div>
+    
+          <div class="form-group">
+            <label for="emaili" class="form-label">Email</label>
+            <input id="emaili" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+            <span class="form-message"></span>
+          </div>
+    
+        
+          <div class="form-group">
+            <label for="avatar" class="form-label">Ảnh</label>
+            <input type="file" id="avatar" name="avatar">
+            <span class="form-message"></span>
+          </div>
+    
+        
+        </div>
+      </div>
+      
+      <div class="form_btn">
+        <button type="submit" class="form-submit btn" onclick="submitForm()">Cập nhật</button>
+        <a class="form-cancel btn" href="index.html">Cancel</a>
+      </div>
+      
+
+    </form>
+    <script src="index.js"></script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+TenMuc{
+  font-style: italic;
+  font-size: 18px;
+}
+NoiDung{
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.content{
+    margin-top: 50px;
+    display: flex;
+}
+
+.catalog{
+    width: 300px;
+}
+
+.catalog__content{
+    background: #f2f1eb;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.catalog__content h3{
+    text-align: center;
+}
+
+.mainContentTitle{
+    font-weight: bold;
+    color: #8c1515;
+    margin-top: 5px !important;
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.mainContent .mainContentTitle{
+    color: red !important;
+}
+
+.mainContentTitle #edit_btn{
+    font-size: 32px;
+    color: #000;
+    margin-left: 30px;
+}
+
+.catalog__list{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.catalog__item{
+    position: relative;
+    padding-left: 10px;
+    display: block;
+}
+
+.catalog__item a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 7px;
+    border-bottom: 1px solid #ccc;
+    line-height: 2;
+    font-size: 1em!important;
+    color: #337ab7;
+}
+
+.catalog__item:hover a{
+    color:#9C1010;
+}
+
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+}
+
+
+
+.mainContent{
+    padding: 5px;
+    width: 100%;
+}
+.mainContentTitle h3{
+    text-align: center;
+    font-size: 14px!important;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.content__item .mainContentTitle{
+    padding: 10px 0;
+    font-size: 14px;
+}
+.content__item .mainContentTitle::after{
+    content: "";
+    line-height: 4px;
+    border: 3px solid #FF9900;
+    display: block;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.content__avt{
+    font: 14px 'Segoe UI','Helvetica Neue','Droid Sans',Arial,Tahoma,Geneva,Sans-serif;
+    color: #343434;
+    border: 0px solid #cbcbcb;
+    text-align: center;
+}
+
+.content__avt span{
+    display: block;
+}
+
+.content__avt .avt{
+    width: 200px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    box-shadow: 10px 10px 10px grey;
+}
+
+
+
+.normalText{
+    font-family: "Times New Roman", Times, serif;
+    line-height: 2em;
+    color: #343434;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+strong{
+    display: inline-block;
+    font-style: italic !important;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+
+
+.content__main{
+    display: flex;
+    position: absolute;
+}
+
+.col-md-3{
+    width: 25%;
+    padding: 0 10px;
+}
+.col-md-4{
+    width: 33.33333333%;
+    padding: 0 10px;
+}
+
+.col-md-6{
+    width: 50%;
+    padding: 0 10px;
+}
+
+
+
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+
+.col-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.667%;
+}
+.col-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33.333%;
+}
+.col-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.333%;
+}
+
+.col-2-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+
+
+
+  html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+    background: #f1f1f1;
+  }
+  .main {
+    display: flex;
+    min-width: 100vh;
+    justify-content: center;
+  }
+  .form {
+    width: 60%;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+  }
+  .form .heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  
+  .form-label,
+  .form-message {
+    text-align: left;
+  }
+  
+  .form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+  }
+  
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+  }
+  
+  .form-control:hover {
+    border-color: #1dbfaf;
+  }
+  
+  .form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+  }
+
+
+  .btn {
+    outline: none;
+    background-color: #0911ea;
+    margin: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 6%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  } 
+
+  .btn1 {
+    outline: none;
+    background-color: #0911ea;
+    margin: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 16%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .form-submit {
+   
+    background-color: #083c9d;
+   
+  }
+
+  .form-cancel{
+    background-color:#d01414;
+  }
+
+  .form-cancel:hover{
+    background-color:#570808;
+  }
+  
+  .form-submit:hover {
+    background-color: #0a6e64;
+  }
+  
+.form_btn {
+    display: flex;
+}
+  
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.input_nd{
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  width: 50%;
+  border: none;
+}
+
+#editForm{
+  position:absolute;
+  background-color: #f2f1eb;
+  z-index: -10;
+  height: 350px;
+}
+
+#myForm{
+  display: flex;
+}
+
+.input_right_1{
+  width: 400px;
+}
+
+.input_right_2{
+  width: 350px;
+}
+
+.editAVT{
+  width: 300px;
+  margin-left: 50px;
+}
+
+

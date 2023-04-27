@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <script src="index.js"></script>
+        <section class="content">
+            <div class="catalog">
+                <div class="catalog__content">
+                    <h3 class = "mainContentTitle">
+                        <img src="avt.png" style="width:30px;height:30px;border-radius: 50%;">    Hoàng Đức Thành
+                    </h3>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a href="#">
+                                Thư báo <span class="badge" style="background-color:#9C1010;">0</span>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Đổi mật khẩu</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Cấp lại mật khẩu Email trường</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Thoát đăng nhập</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Thông tin mật khẩu Email cấp mới</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Xác nhận khai báo y tế</a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="catalog__content">
+                    <h3 class = "mainContentTitle">Quản lý hồ sơ sinh viên</h3>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a href="#">Thông tin sinh viên</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Cập nhật thông tin cá nhân</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Thông tin lớp sinh viên</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <br>
+                <div class="catalog__content">
+                    <h3 class = "mainContentTitle">Đào tạo</h3>
+                    <ul class="catalog__list">
+                        <li class="catalog__item" class="cosub">
+                            <a href="#">Chương trình đào tạo</a>
+                        </li>
+                        <li class="catalog__item" class="cosub">
+                            <a href="#">Kế hoạch học tập</a>
+                        </li>
+                        <li class="catalog__item" class="cosub">
+                            <a href="#">Kết quả học tập</a>
+                        </li>
+                        <li class="catalog__item" class="cosub">
+                            <a href="#">Đồ án - Tốt nghiệp</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Thời khóa biểu tạm thời</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <br>
+                <div class="catalog__content">
+                    <h3 class = "mainContentTitle">Tư vấn trực tuyến</h3>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a href="#">Hỏi đáp - Tư vấn trực tuyến</a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="catalog__content">
+                    <h3 class = "mainContentTitle">Tài chính học vụ</h3>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a href="#">Thông tin công nợ học phí</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Thanh toán học phí trực tuyến</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <br>
+                <div class="catalog__content">
+                    <h3 class = "mainContentTitle">Dịch vụ hành chính</h3>
+                    <ul class="catalog_list">
+                        <li class="catalog__item">
+                            <a href="#">ĐK cấp giấy tờ</a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+            </div>
+            <div class="mainContent">
+                <div class="mainContentTitle">
+                    <h3>THÔNG TIN CÁ NHÂN</h3>
+                    <hr/>
+                </div>
+                <div class="content__item">
+                    <div class="mainContentTitle">
+                        THÔNG TIN SINH VIÊN
+                        <a onclick="edit()"><img src="pen.png" alt="edit" width="25px"></a>
+                        <button onclick="luu()" class="form-submit btn">Ok</button>
+                        <button onclick="cancel()" class="form-submit btn">Cancel</button>
+                        <button onclick="reset()" class="form-submit btn">Reset</button>
+                    </div>
+                    <div class="content__main">
+                        <div class="col-md-3 content__avt">
+                            <img src="avt.png" alt="Avt" class="avt"  id="ttavt">
+                            <span class="normalText">
+                                <strong>MSSV: </strong>
+                                20204689<br/>
+                            </span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo1">
+                                <strong>Họ và tên &emsp;: </strong>
+                                <span id="ttfullname">Hoàng Đức Thành</span><br>
+                                <strong>Năm vào trường &emsp;: </strong>
+                                <span id="ttadmission-year">2020</span><br>
+                                <strong>Bậc đào tạo &emsp;: </strong>
+                                <span id="tttertiary-education">Đại học đại trà</span><br>
+                                <strong>Chương trình &emsp;: </strong>
+                                <span id="ttstudy-status">Khoa học Máy tính 2020</span><br/>
+                                <strong>Khoa/Viện quản lý&emsp;: </strong>
+                                <span id="ttstudy-status-school">Trường Công nghệ Thông tin và Truyền thông</span><br/>
+                                <strong>Tình trạng học tập &emsp;: </strong>
+                                <span id="ttlearn-status">Học</span><br/>
+                            </span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo2">
+                                <strong>Giới tính &emsp;: </strong>
+                                <span id="ttgender">Nam</span><br/>
+                                <strong>Lớp &emsp;: </strong>
+                                <span id="ttclass">Khoa học máy tính 05 -K65</span><br/>
+                                <strong>Khóa học &emsp;: </strong>
+                                <span id="ttcourse">65</span><br/>
+                                <strong>Email &emsp;: </strong>
+                                <span id="ttemail">thanh.hd204689@sis.hust.edu.vn</span><br/>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="editForm">
+                        <script>
+                            var editForm=document.getElementById("editForm");
+                            editForm.style.display="none";
+                        </script>
+                        <form id="myForm">
+                            <div class="editAVT">
+                                <img id="avt_edit" width="200px" height="300px">
+                                <input type="file" id="url_avt" >
+                                <script>
+                                    const inputFile = document.getElementById('url_avt');
+                                    const previewImage = document.getElementById('avt_edit');
+        
+                                    inputFile.addEventListener('change', function() {
+                                        const file = this.files[0];
+                                        const reader = new FileReader();
+        
+                                        reader.addEventListener('load', function() {
+                                        previewImage.src = reader.result;
+                                        });
+        
+                                        if (file) {
+                                        reader.readAsDataURL(file);
+                                        }
+                                    });
+                                </script>
+                            </div>
+                            <div class="input_right_1">
+                                <label for="fullname" class="form-label">Họ và Tên:</label>
+                                <input type="text" id="fullname" class="form-control">
+                                <br> <br>
+                                <label for="admission-year" class="form-label">Năm vào Trường:</label>
+                                <input type="number" id="admission-year" min="1950" max="2024" step="1" class="form-control"> 
+                                <br><br>
+                                <label for="tertiary-education" class="form-label">Bậc đào tạo:</label>
+                                <select id="tertiary-education" class="form-control">
+                                    <option value="Đại học đại trà">Đại học đại trà</option>
+                                    <option value="Chương trình tiên tiến">Chương trình tiên tiến</option> 
+                                </select>
+                                <br><br>
+                                <label for="study-status" class="form-label">Chương Trình:</label>
+                                <input type="text" id="study-status" class="form-control"> 
+                                <br> <br>
+                                <label for="study-status-school" class="form-label">Khoa /Viện quản lý:</label>
+                                <input type="text" id="study-status-school" class="form-control"> <br> <br>
+                                <label for="learn-status" class="form-label">Tình trạng học tập:</label>
+                                <select name="learn-status" id="learn-status" class="form-control">
+                                    <option value="Học">Học</option>
+                                    <option value="Bị đình chỉ">Bị đình chỉ</option>
+                                    <option value="Đã tốt nghiệp">Đã tốt nghiệp</option>
+                                </select>
+                                <br><br>
+                                <input type="button" onclick="ok()" value="Gửi"  class="form-submit btn1" style="text-align: center;">
+                            </div>
+                            <div class="input_right_2">
+                                <label form="gender" class="form-label">Giới Tính</label>
+                                <select id="gender" class="form-control">
+                                    <option value="Nam">Nam</option>
+                                    <option value="Nữ">Nữ</option>
+                                </select><br><br>
+                                <label for="class" class="form-label">Lớp:</label>
+                                <input type="text" id="class" class="form-control"><br><br>
+                                <label for="course" class="form-label">Khoá học:</label>
+                                <input type="number" id="course" min="60" max="68" step="1" class="form-control"><br><br>
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="text" id="email" class="form-control"><br><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="content__item" style="margin-top: 350px;">
+                    <div class="mainContentTitle">THÔNG TIN HỌC TẬP</div>
+                    <div class="content__main" style="width: 1000px;">
+                        <div class="col-md-6">
+                            <span class="normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo3">
+                                <strong>Tổng kết học kỳ&emsp;: </strong>
+                                20212<br/>
+                                <strong>Trung bình tích lũy &emsp;: </strong>
+                                3.18<br/>
+                                <strong>Số TC nợ đăng ký&emsp;: </strong>
+                                0<br/>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo4">
+                                <strong>Số TC tích lũy &emsp;: </strong>
+                                62<br/>
+                                <strong>Trình độ sinh viên &emsp;: </strong>
+                                2<br/>
+                                <strong>Mức cảnh báo &emsp;: </strong>
+                                M0<br/>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__item" style="margin-top: 200px;">
+                    <div class="mainContentTitle">THÔNG TIN CÁ NHÂN</div>
+                    <div class="content__main">
+                        <div class="col-md-6">
+                            <span class="normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo5">
+                                <strong>Dân tộc &emsp;: </strong>
+                                KINH<br/>
+                                <strong>Năm TN cấp 3 &emsp;: </strong>
+                                2020<br/>
+                                <strong>Địa chỉ&emsp;: </strong>
+                                PHƯỜNG HỒNG CHÂU, THÀNH PHỐ HƯNG YÊN, TỈNH HƯNG YÊN<br/>
+                                <strong>Số CMTND &emsp;: </strong>
+                                033***47<br/>
+                                <strong>Nơi cấp &emsp;: </strong>
+                                TỈNH HƯNG YÊN<br/>
+                                <strong>Họ tên bố&emsp;: </strong>
+                                HOÀNG LỤC TRÍ<br/>
+                                <strong>Năm sinh &emsp;: </strong>
+                                15-10-1966<br/>
+                                <strong>Nghề nghiệp &emsp;: </strong>
+                                ĐÃ MẤT<br/>
+                                <strong>Điện thoại &emsp;: </strong>
+                                KHÔ***CÓ<br/>
+                                <strong>Email &emsp;: </strong>
+                                KHÔNG CÓ<br/>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="normalText" id="ctl00_ctl00_contentPane_MainPanel_MainContent_lbTextInfo6">
+                                <strong>Tôn giáo &emsp;: </strong>
+                                KHÔNG<br/>
+                                <strong>Trường THPT &emsp;: </strong>
+                                THPT CHUYÊN HƯNG YÊN, THÀNH PHỐ HƯNG YÊN, TỈNH HƯNG YÊN<br/>
+                                <strong>Hộ khẩu &emsp;: </strong>
+                                PHƯỜNG HỒNG CHÂU, THÀNH PHỐ HƯNG YÊN, TỈNH HƯNG YÊN<br/>
+                                <strong>Số Điện thoại &emsp;: </strong>
+                                077***93<br/>
+                                <strong>Họ tên mẹ&emsp;: </strong>
+                                TRỊNH THỊ ĐÀO<br/>
+                                <strong>Năm sinh &emsp;: </strong>
+                                24-05-1971<br/>
+                                <strong>Nghề nghiệp &emsp;: </strong>
+                                CÔNG NHÂN<br/>
+                                <strong>Điện thoại &emsp;: </strong>
+                                036***05<br/>
+                                <strong>Email &emsp;: </strong>
+                                TR*@*IL.COM<br/>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
